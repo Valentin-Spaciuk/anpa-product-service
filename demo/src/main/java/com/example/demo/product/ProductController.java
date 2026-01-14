@@ -18,7 +18,6 @@ public class ProductController {
         this.service = service;
     }
 
-    // ✅ curl http://localhost:8092/api/v1/products
     @GetMapping
     public List<Product> getAll() {
         return service.findAll();
